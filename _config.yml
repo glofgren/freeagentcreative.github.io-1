@@ -1,0 +1,11 @@
+# Site settings
+title: Free Agent Creative
+email: hello@freeagentcreative.com
+description: We are a collective of seasoned designers and developers. We are about making our client’s jobs easier by assembling the right team for the right project. We are Free Agent Creative. 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username:
+github_username:
+
+# Build settings
+markdown: kramdown

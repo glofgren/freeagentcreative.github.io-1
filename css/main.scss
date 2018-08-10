@@ -1,0 +1,189 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import "fonts";
+
+body {
+  font-family: "verblight", Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+h2, h4 {
+  font-family: "centrifuge", Georgia, serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section.hero {
+  background-image: url('/assets/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 100px;
+
+  &:before {
+    display: none;
+  }
+
+  header {
+    h1 {
+      font-size: 32px;
+      font-family: "verbextralight";
+      line-height: 1.7;
+    }
+  }
+}
+
+section {
+  padding: 125px 0;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 25px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 33%;
+    min-width: 316px;
+  }
+
+  h2 {
+    padding: 15px 25px 10px;
+    line-height: 1;
+    display: inline;
+  }
+
+  h3 {
+    margin-top: 45px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+  }
+}
+
+section.gray {
+  background: url('/assets/slateTexture.jpg') no-repeat top center;
+  background-size: cover;
+
+  &:before {
+    background: url("/assets/divider_black.png") repeat-x left center;
+  }
+
+  h2 {
+    background: #000;
+    color: white;
+  }
+}
+
+section.black {
+  background-color: #000;
+  color: #fff;
+
+  &:before {
+    background: url("/assets/divider_white.png") repeat-x left center;
+  }
+
+  h2 {
+    color: black;
+    background: white;
+  }
+}
+
+section.white {
+  background-color: #fff;
+
+  &:before {
+    background: url("/assets/divider_black.png") repeat-x left center;
+  }
+
+  h2 {
+    background: #000;
+    color: white;
+  }
+}
+
+.btn {
+  border-radius: 0;
+
+  &.btn-default {
+    background: #000;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 30px;
+  }
+}
+
+nav {
+  height: 180px;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    background: white;
+    -webkit-transform: rotate(-24.5deg) skew(40deg);
+    -moz-transform: rotate(-24.5deg) skew(40deg);
+    -ms-transform: rotate(-24.5deg) skew(40deg);
+    transform: rotate(-24.5deg) skew(40deg);
+    height: 200px;
+    width: 280px;
+    bottom: -80px;
+    z-index: 1;
+  }
+
+  img {
+    width: 250px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: -23px;
+    z-index: 2;
+  }
+}
+
+.agents {
+  li {
+    position: relative;
+    min-height: 280px;
+    margin-bottom: 45px;
+
+    .btn {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 200px;
+    }
+  }
+}
+
+footer {
+  .table {
+    margin-top: 20px;
+    border: none;
+    tbody {
+      tr {
+        td {
+          vertical-align: middle;
+          width: 33%;
+          border: none;
+
+          a {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
